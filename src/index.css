@@ -1,0 +1,161 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #34d399;
+}
+
+/* Header Navigation */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #1f2937;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky {
+  background-color: #111827;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav li a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+nav li a:hover {
+  color: #34d399;
+}
+
+/* Section Styling */
+section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #10b981;
+  margin-bottom: 1rem;
+}
+
+/* Interactive Buttons */
+button,
+a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #10b981;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(16, 185, 129, 0.4);
+}
+
+button:hover,
+a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(16, 185, 129, 0.6);
+}
+
+/* Cards (Projects, Skills, etc.) */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.skill-item {
+  background: #f3f4f6;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  color: #374151;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-item:hover {
+  background: #10b981;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background: #1f2937;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
